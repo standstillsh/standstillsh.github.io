@@ -1,0 +1,966 @@
+/* common.css */
+* {margin:0; padding:0}
+body, html {height: 100%; width: 100%;
+min-width: 1300px;
+line-height: 1;
+/* overflow: hidden; */
+/* overflow-x: hidden; */
+/* overflow-y: hidden; */
+color: #000;
+/* cursor: auto; */
+}
+a {color: #000; text-decoration: none;}
+
+body::-webkit-scrollbar { 
+    display: none; 
+}
+
+/* 폰트 Fonts */
+/* 영문 'Montserrat */
+/* font-family: 'Montserrat', sans-serif; */
+/* 한글 Noto Sans */
+/* font-family: 'Noto Sans KR', sans-serif; */
+
+/* 배경 그라데이션 */
+body.gradient {
+	background: linear-gradient(90deg, #f2cd33, #ff7b00, #ff5000, #ff7b00);
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+/* wrap */
+div.wrap {font-family: 'Montserrat', sans-serif;}
+
+/* header */
+div.wrap > header {}
+div.wrap > header > h1 {
+    margin-left: 14px; margin-top: 14px; float: left; z-index: 10;
+    position: fixed;
+}
+
+/* header > div.nav */
+div.wrap > header > div.nav {
+    margin-top: 20px;
+    width: 46px;
+    /* border: 1px solid red; */
+    float: right;
+    position: fixed;
+    z-index: 10;
+    right: 14px;
+}
+div.wrap > header > div.nav > span {
+    display: block;
+    width: 43px; height: 1px;
+    border-top: 2px solid #000;
+    /* background-color: #000; */
+    position: relative;
+}
+
+
+div.wrap > header > div.nav > span#nav1 {
+    margin-top: 1px;
+    transform: rotate(0deg);
+    transition: all ease-in-out 600ms;
+    top:0;
+}
+div.wrap > header > div.nav > span#nav2 {
+    margin: 10px 0 10px 0;
+    transform: rotate(0deg);
+    opacity: 1;
+    transition: opacity ease-in-out 300ms;
+}
+div.wrap > header > div.nav > span#nav3 {
+    transform: rotate(0deg);
+    transition: all ease-in-out 600ms;
+    bottom:0;
+}
+
+
+/* div#menu */
+div#menu {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    right: -100vw;
+
+    background: linear-gradient(90deg, #f2cd33, #ff7b00, #ff5000, #ff7b00);
+	background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+}
+div#menu > ul {
+    list-style-type: none;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    width: 100vw;
+    top: 50%;
+    transform: translateY(-50%);
+}
+div#menu > ul > li {
+    font-weight: 800;
+    font-size: 85px;
+    display: block;
+    position: relative;
+    top: 0;
+    transition: all ease-in-out 400ms;
+}
+div#menu > ul > li:hover{
+    top: -40px;
+}
+
+div#menu > ul > li > a > span {
+    font-family: 'Noto Sans KR', sans-serif; 
+    display: block;
+    font-size: 18px;
+    font-weight: 400;
+    /* padding-left: 5px; */
+    /* margin-bottom: 20px; */    
+
+}
+div#menu > div#horizonlineformenu {
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    /* margin-top: 8px; */
+}
+
+
+/* div#workmenu */
+div#workmenu {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    /* right: -100vw; */
+    background: linear-gradient(90deg, #f2cd33, #ff7b00, #ff5000, #ff7b00);
+	background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+}
+
+div#workmenu > ul {
+    list-style-type: none;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    width: 100vw;
+    top: 50%;
+    transform: translateY(-50%);
+}
+div#workmenu > ul > li {
+    font-weight: 800;
+    font-size: 85px;
+    display: block;
+}
+
+div#workmenu > ul > li > a > span {
+    font-family: 'Noto Sans KR', sans-serif; 
+    display: block;
+    font-size: 18px;
+    font-weight: 400;
+    /* padding-left: 5px; */
+    /* margin-bottom: 20px; */
+}
+
+div#workmenu > div#horizonlineformenu {
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    /* margin-top: 8px; */
+}
+
+/* worksub 메뉴 */
+div#worksub {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    position: absolute;
+    font-size: 40px;
+    left: 200%; top: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 180px;
+    display: flex;
+    justify-content: space-around;
+    width: 70vw;
+}
+div#worksub > span {
+}
+div#worksub > span > a {}
+
+
+/* div#menutrans */
+div#menutrans {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    display: block;
+    top: -100vh;
+    right: -100vw;
+    background-color: #fff;
+}
+/* div#menutrans2 */
+div#menutrans2 {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    display: block;
+    right: -100vw;
+    top: -100vh;
+    background: linear-gradient(90deg, #f2cd33, #ff7b00, #ff5000, #ff7b00);
+	background-size: 400% 400%;
+	/* animation: gradient 10s ease infinite; */
+}
+
+/* footer */
+div.wrap > footer {
+    position: fixed; bottom: 14px; right: 14px;
+}
+div.wrap > footer > span {
+    font-size: 14px;
+    font-weight: 400;
+    opacity: 0.7;
+}
+
+
+
+/* main wrap  */
+/* main wrap section */
+div.main > section {}
+div.main > section > div#horizonline {
+    width: 0%;
+    height: 1px;
+    background-color: #000;
+    position: fixed;
+    top:50%; left: 50%;
+    transform: translateY(-50%);
+    animation: goline 1500ms ease-in-out forwards;
+}
+
+@keyframes goline {
+    from {
+        left:50%;
+        width:0%;
+      }
+      to {
+        left:0;
+        width:100%;
+      }
+}
+
+div.main > section > div#maintext {
+    position: fixed; bottom: 70px; left: 80px;
+}
+div.main > section > div#maintext > span {
+    /* position: fixed;  */
+    bottom: 0;
+    display: block;
+}
+div.main > section > div#maintext > span#maintitle {
+    font-size: 140px; font-weight: 700;
+    opacity: 0;
+    animation: AppearTopCircle 800ms ease-in-out 3000ms forwards;
+}
+div.main > section > div#maintext > span#mainsub {
+    opacity: 0;
+    font-size: 28px; font-weight: 300; margin-top: 30px; 
+    animation: AppearTopCircle 700ms ease-in-out 4000ms forwards;
+}
+
+/* Main Title */
+div.main > section > div#maintext > span#maintitle > span {
+    transform: translateY(-10px);
+    /* animation: bounce 1200ms cubic-bezier(0.245, 0.325, 0.510, 1.305) forwards alternate; */
+    animation: bounce 2000ms cubic-bezier(0.245, 0.325, 0.510, 1.305) infinite alternate;
+    display: inline-block;
+}
+
+div.main > section > div#maintext > span#maintitle > span:nth-child(1) {
+    animation-delay: 3000ms;
+}
+div.main > section > div#maintext > span#maintitle > span:nth-child(2) {
+    animation-delay: 3100ms;
+}
+div.main > section > div#maintext > span#maintitle > span:nth-child(3) {
+    animation-delay: 3200ms;
+}
+div.main > section > div#maintext > span#maintitle > span:nth-child(4) {
+    animation-delay: 3300ms;
+}
+
+@keyframes bounce {
+  0% {transform: translateY(-10px)}
+  40% {transform: translateY(-20px)}
+  80% {transform: translateY(5px)}
+  100% {transform: translateY(0px)}
+}
+
+
+
+/* Mian topCircle */
+div.main > section > div#topCircle {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* margin-top: -110px; */
+    margin-left: 10%;
+    opacity: 0;
+    animation: AppearTopCircle 500ms ease-in-out 1500ms forwards;
+}
+
+@keyframes AppearTopCircle {
+    100% {opacity: 1;}
+}
+
+div.main > section > div#topCircle > span {
+    height: 1px; display: block;
+    border-bottom: 1px solid #fff;
+     /* background-color: #fff; */
+    content: "";
+    /* margin: 10px auto; */
+    margin: 12.5px auto;
+}
+/*
+div.main > section > div#topCircle > span:nth-child(1)
+{
+    width: 40px;
+    opacity: 0.2;
+}
+div.main > section > div#topCircle > span:nth-child(2)
+{
+    width: 126px;
+    opacity: 0.25;
+}
+div.main > section > div#topCircle > span:nth-child(3)
+{
+    width: 170px;
+    opacity: 0.3;
+}
+div.main > section > div#topCircle > span:nth-child(4)
+{
+    width: 202px;
+    opacity: 0.35;
+}
+div.main > section > div#topCircle > span:nth-child(5)
+{
+    width: 228px;
+    opacity: 0.4;
+}
+div.main > section > div#topCircle > span:nth-child(6)
+{
+    width: 250px;
+    opacity: 0.45;
+}
+div.main > section > div#topCircle > span:nth-child(7)
+{
+    width: 270px;
+    opacity: 0.5;
+}
+div.main > section > div#topCircle > span:nth-child(8)
+{
+    width: 280px;
+    opacity: 0.55;
+}
+div.main > section > div#topCircle > span:nth-child(9)
+{
+    width: 295px;
+    opacity: 0.6;
+}
+div.main > section > div#topCircle > span:nth-child(10)
+{
+    width: 305px;
+    opacity: 0.65;
+}
+div.main > section > div#topCircle > span:nth-child(11)
+{
+    width: 315px;
+    opacity: 0.7;
+}
+div.main > section > div#topCircle > span:nth-child(12)
+{
+    width: 320px;
+    opacity: 0.8;
+}
+div.main > section > div#topCircle > span:nth-child(13)
+{
+    width: 326px;
+    opacity: 0.9;
+}
+div.main > section > div#topCircle > span:nth-child(14)
+{
+    width: 330px;
+}
+div.main > section > div#topCircle > span:nth-child(15)
+{
+    width: 330px;
+} */
+
+div.main > section > div#topCircle > span:nth-child(1)
+{
+    width: calc(40px + 130px);
+    opacity: 0.2;
+}
+div.main > section > div#topCircle > span:nth-child(2)
+{
+    width: calc(126px + 130px);
+    opacity: 0.25;
+}
+div.main > section > div#topCircle > span:nth-child(3)
+{
+    width: calc(170px + 130px);
+    opacity: 0.3;
+}
+div.main > section > div#topCircle > span:nth-child(4)
+{
+    width: calc(202px + 130px);
+    opacity: 0.35;
+}
+div.main > section > div#topCircle > span:nth-child(5)
+{
+    width: calc(228px + 130px);
+    opacity: 0.4;
+}
+div.main > section > div#topCircle > span:nth-child(6)
+{
+    width: calc(250px + 130px);
+    opacity: 0.45;
+}
+div.main > section > div#topCircle > span:nth-child(7)
+{
+    width: calc(270px + 130px);
+    opacity: 0.5;
+}
+div.main > section > div#topCircle > span:nth-child(8)
+{
+    width: calc(280px + 130px);
+    opacity: 0.55;
+}
+div.main > section > div#topCircle > span:nth-child(9)
+{
+    width: calc(295px + 130px);
+    opacity: 0.6;
+}
+div.main > section > div#topCircle > span:nth-child(10)
+{
+    width: calc(305px + 130px);
+    opacity: 0.65;
+}
+div.main > section > div#topCircle > span:nth-child(11)
+{
+    width: calc(315px + 130px);
+    opacity: 0.7;
+}
+div.main > section > div#topCircle > span:nth-child(12)
+{
+    width: calc(320px + 130px);
+    opacity: 0.8;
+}
+div.main > section > div#topCircle > span:nth-child(13)
+{
+    width: calc(326px + 130px);
+    opacity: 0.9;
+}
+div.main > section > div#topCircle > span:nth-child(14)
+{
+    width: calc(330px + 130px);
+}
+div.main > section > div#topCircle > span:nth-child(15)
+{
+    width: calc(330px + 130px);
+}
+
+/* bottomline */
+div.main > section > div#bottomline {
+    position: fixed;
+    left:50%; bottom: 50%;
+    transform: translate(-50%, -50%);
+    margin-bottom: -435px;
+    margin-left: 10%;
+    opacity: 0;
+    animation: AppearTopCircle 500ms ease-in-out 2000ms forwards;
+}
+div.main > section > div#bottomline > img {
+    
+}
+
+
+/* about.html */
+div.about {width: 100vw;}
+div.about > section {
+    /* display: block; */
+    margin: auto;
+    width: 1600px; height: 700px;
+    position: absolute;
+    /* border: 1px solid yellow; */
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+}
+div.about > section > article#intro {
+    width: 800px;
+    position: absolute; left: -100px;
+    top:50%; 
+    transform: translateY(-50%);
+    animation: intro 1500ms ease-in-out forwards;
+    opacity: 0;
+}
+
+@keyframes intro {
+    from {
+        left:-100px;
+        opacity: 0;
+      }
+      to {
+        left:0;
+        opacity: 1;
+      }
+}
+
+
+/* 소개 한글 */
+div.about > section > article#intro > div#kor {
+    font-family: 'Noto Sans KR', sans-serif;    font-weight: 400; font-size: 22px;
+    line-height: 2;
+}
+/* 안녕하세요, */
+div.about > section > article#intro > div#kor > span:first-child {
+    font-size: 70px;
+    font-weight: 900;
+    line-height: 1;
+    display: block;
+    padding-bottom: 38px;
+    /* color: #ff7b00; */
+}
+div.about > section > article#intro > div#kor > span:first-child > span {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+div.about > section > article#intro > div#kor > span.orange {
+    color: #ff7b00;
+    font-weight: 600;
+}
+
+/* 소개 영어 */
+div.about > section > article#intro > div#eng {
+    font-family: 'Montserrat', sans-serif;
+    color: #8c8c8c; font-size: 18px;
+    line-height: 1.7;
+    font-weight: 500;
+}
+
+/* 버튼 */
+div.about > section > article#intro > button#resume {
+    border: none; background-color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900; font-style: italic;
+    font-size: 28px;
+    color: #ff7b00;
+    margin: 40px 0 36px 0;
+    padding-left: 10px;
+}
+
+div.about > section > article#intro > button#resume::after {
+    border-bottom: 1px solid #ff7b00;
+    width: 780px; content: "";
+    position: absolute; left: 0;
+    margin-top: 4px;
+    display: block; 
+} 
+
+div.about > section > article#intro > span#slash {
+    width: 1px; height: 20px;
+    background-color: #ff7b00;
+    display: block;
+    position: absolute;
+    margin-top: -47px;
+    margin-left: 771px;
+    transform: rotate(-55deg);   
+}
+
+/* 프로필 이미지 */
+div.about > section > article#pic {
+    /* float: right;  */
+    position: absolute; right: 50px;
+    top:50%; 
+    transform: translateY(-50%);
+    animation: pic 1500ms 1000ms ease-in-out forwards;
+    opacity: 0;
+}
+
+@keyframes pic {
+    from {
+        right:-60px;
+        opacity: 0;
+      }
+      to {
+        right: 50px;
+        opacity: 1;
+      }
+}
+
+div.about > section > article#pic > div#cir_rot {
+    /* background-color: #000; */
+    width: 100px;
+    height: 280px;
+    /* left: 260px; */
+    left: 33%;
+    transform: translateX(-50%);
+    transform-origin:right bottom;
+    position: absolute;
+    mix-blend-mode: difference;
+    /* animation: CircleRotate 5000ms infinite; */
+    /* -webkit-animation-play-state: paused; */
+    transition: all 100ms cubic-bezier(0.445, 0.050, 0.550, 0.950);
+
+}
+
+@keyframes CircleRotate {
+    0% {
+        transform: rotate(-58deg);
+    }
+    50% {
+        transform: rotate(78deg);
+    }
+    100% {
+        transform: rotate(-58deg);
+    }
+
+}
+
+div.about > section > article#pic > div#cir_rot > div#circle{
+    width: 220px; height: 220px;
+    border-radius: 50%;
+    position: absolute;
+    top: -110px; right: -60px;
+    background: linear-gradient(90deg, #f2cd33, #ff7b00, #ff5000, #ff7b00);
+	background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+    /* margin-top: -70px; */
+    /* mix-blend-mode: screen; */
+    z-index: -10;
+    animation: introcircle 500ms 2500ms ease-in-out forwards;
+    opacity: 0;
+}
+
+@keyframes introcircle {
+    from {
+        /* right:-60px; */
+        opacity: 0;
+      }
+      to {
+        /* right: 50px; */
+        opacity: 1;
+      }
+}
+
+div.about > section > article#pic > img:first-child, img:nth-child(2) {
+    border-radius: 50%;
+    /* z-index: 10; */
+}
+
+div.about > section > article#pic > img.line {
+    position: absolute; right: -18px; top: 336px;
+    z-index: -1;    
+}
+
+/* contact.html */
+div.contact {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    /* right: 100vw; */
+    background: linear-gradient(90deg, #f2cd33, #ff7b00, #ff5000, #ff7b00);
+	background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+}
+    
+div.contact > section {
+    /* height: 100vw; */
+}
+
+div.contact > section > article#contactIntro {
+    width: 100vw;
+    height: 50vh;
+    background-color: #fff;
+}
+div.contact > section > article#contactIntro > div {
+    width: 1600px;
+    height: 50vh;
+    /* background-color: aquamarine; */
+    margin: 0 auto;
+    position: relative;
+    animation: intro 1500ms ease-in-out forwards;
+    opacity: 0;
+
+}
+div.contact > section > article#contactIntro > div > span {
+    display: block;
+    position: absolute;
+}
+div.contact > section > article#contactIntro > div > span:first-child {
+    font-size: 40px;
+    bottom: 160px;
+}
+div.contact > section > article#contactIntro > div > span:last-child {
+    font-weight: 700;
+    font-size: 80px;
+    bottom: 60px;
+}
+div.contact > section > article#contacts {
+    width: 1600px;
+    height: 50vh;
+    margin: 0 auto;
+    font-size: 36px;
+    position: relative;
+    animation: pic 1500ms 1000ms ease-in-out forwards;
+    opacity: 0;
+}
+
+/* contactCircle */
+div.contact > section > article#contacts > div#contactCircle {
+    position: absolute;
+    left: 0;
+    top: 10px;
+	animation: circlepingpong 7s ease infinite;
+}
+
+@keyframes circlepingpong {
+	0% {
+		left: 0;
+    }
+    50% {
+        left: 81%
+    }
+	100% {
+		left: 0;
+	}
+}
+
+div.contact > section > article#contacts > div {
+    position: absolute;
+    right: 0;
+    top: 30px;
+}
+div.contact > section > article#contacts > div > ul {
+    float: left; 
+}
+
+div.contact > section > article#contacts > div > ul > li {
+    line-height: 2.2;
+}
+
+div.contact > section > article#contacts > div > ul:first-child {
+    font-weight: 800;
+    margin-right: 50px;
+    
+}
+div.contact > section > article#contacts > div > ul:last-child {
+    text-align: right; 
+}
+
+/* work categories */
+div.workCategories {}
+div.workCategories > section {
+    width: 50vw;
+    height: 100vw;
+    position: absolute;
+}
+div.workCategories > section#informWrap {
+    position: fixed;
+}
+
+div.workCategories > section#informWrap > ul {
+    width: 600px;
+    justify-content: space-around;
+    margin: 27px auto 0 auto;
+    font-size: 20px;
+    font-weight: 300;
+
+}
+
+div.workCategories > section#informWrap > ul > li {
+    float: left;
+}
+
+div.workCategories > section#informWrap > ul > li#selectedCat {
+    font-weight: 700;
+}
+
+div.workCategories > section#informWrap > ul > li:first-child {
+    margin-left: 100px;
+}
+div.workCategories > section#informWrap > ul > li:nth-child(2) {
+    margin: 0 50px 0 50px;
+}
+div.workCategories > section#informWrap > ul > li:nth-child(3) {
+    margin-right: 50px;
+}
+
+/* 설명 */
+div.workCategories > section#informWrap > div.informText {
+    width: 700px;
+    height: 60ch;
+    margin: 150px auto;
+    position: relative;
+    /* top: 25vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* justify-content: space-between; */
+    /* justify-content: center; */
+    /* align-items: center; */
+
+    animation: intro 1500ms ease-in-out forwards;
+    opacity: 0;
+}
+/* 컨텐츠 간의 공백 */
+div.space {
+    display: inline-block;
+    height: 300px;
+}
+
+
+div.workCategories > section#informWrap > div.informText span.kor {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+div.workCategories > section#informWrap > div.informText span.eng {
+    font-family: 'Montserrat', sans-serif;
+}
+/* 작업물 타이틀 */
+div.workCategories > section#informWrap > div.informText > h1 {
+    font-size: 60px;
+    padding-bottom: 14px;
+}
+/* 작업물 서브타이틀 */
+div.workCategories > section#informWrap > div.informText > h2 {
+    font-weight: 300;
+    font-size: 24px;
+    font-style: italic;
+    margin-top: -36px;
+    padding-bottom: 20px;
+} 
+
+/* 작업물 개요 */
+div#informul {
+    display: flex;
+}
+div#informul > ul:first-child {
+    font-size: 20px;
+    margin-top: -5px;
+    /* float: left;
+    display: block; */
+}
+div.workCategories > section#informWrap > div.informText > ul {
+    font-weight: 300;
+    font-size: 18px;
+    float: left;
+}
+div.workCategories > section#informWrap > div.informText ul.inform1 li {
+    font-weight: 700;
+    padding-right: 60px;
+}
+div#informul > ul li:nth-child(2) {
+    padding: 18px 0 18px 0;
+}
+
+/* 어바웃 프로젝트 About the project */
+div.workCategories > section#informWrap > div.informText > ul:last-child {
+    line-height: 1.6;
+}
+div.workCategories > section#informWrap > div.informText > ul:last-child > li:first-child {
+    clear: both;
+    padding: 10px 0 15px 0;
+    font-weight: 700;
+    font-size: 20px;
+}
+div.workCategories > section#informWrap > div.informText  > ul:last-child > li.button {
+    font-weight: 900; font-style: italic;
+    font-size: 24px; 
+    margin-top: 70px;
+    /* margin-top: ; */
+}
+div.workCategories > section#informWrap > div.informText > ul:last-child > li.button::after {
+    border-bottom: 1px solid #000000;
+    width: 240px; content: " ";
+    position: absolute; left: 0;
+    margin-top: 4px;
+    display: block; 
+}
+div.workCategories > section#informWrap > div.informText > ul:last-child > li.button::before {
+    width: 1px; height: 20px;
+    content: " ";
+    background-color: #000;
+    display: block;
+    position: absolute;
+    margin-top: 27px;
+    left: 233px;
+    transform: rotate(-55deg);   
+}
+
+/* 작업물 이미지 영역 */
+div.workCategories > section#imagesWrap {
+    background-color: #ffffff;
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100vh;
+}
+div.workCategories > div#worksimages {
+    display: flex;
+    flex-direction: column;
+    /* margin-top: 100px; */
+    position: absolute;
+    right: 5%;
+    
+}
+div.workCategories > div#worksimages > img {
+    border-radius: 0;
+    /* margin: auto; */
+    width: 40vw;
+    animation: pic 1500ms 1000ms ease-in-out forwards;
+    opacity: 0;
+}
+
+/* 스크롤 원 바 */
+div.workCategories > section#informWrap > div.bar {
+    display: inline-block;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    height: 1px;
+    position: fixed;
+    bottom: 80px;
+}
+div.workCategories > section#informWrap > div#bar1 {
+    width: 400px;
+    left: 40px;
+}
+div.workCategories > section#informWrap > div#bar2 {
+    width: 200px;
+    left: 470px;
+}
+div.workCategories > section#informWrap >  div#barcircle {
+    display: block;
+    border-radius: 100px;
+    width: 22px;
+    height: 22px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    position: fixed;
+    bottom: 69px;
+    left: 40px;
+}
+
