@@ -241,6 +241,72 @@ div.wrap > footer > span {
 
 
 /* main wrap  */
+
+/* main bg circles */
+div.main > div#bgcirclewrap {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0; left: 0;
+    opacity: 0;
+    animation: AppearTopCircle 800ms ease-in-out 3400ms forwards;
+}
+div.main > div#bgcirclewrap > div.bgcir {
+    position: absolute;
+}
+
+/* 크기는 html에서 변경 */
+div.main > div#bgcirclewrap > div#bgcir1 {
+    top: 8%;
+    left: 8%;
+    transform: rotate(30deg);
+    animation: bgcir 150s infinite;
+    opacity: 0.5;
+}
+div.main > div#bgcirclewrap > div#bgcir2 {
+    top: 70%;
+    left: 18%;
+    transform: rotate(-30deg);
+    animation: bgcir2 150s infinite;
+}
+div.main > div#bgcirclewrap > div#bgcir3 {
+    top: -17%;
+    right: 14%;
+    transform: rotate(-90deg);
+    animation: bgcir2 150s infinite;
+    opacity: 0.5;
+}
+div.main > div#bgcirclewrap > div#bgcir4 {
+    top: 45%;
+    right: 10%;
+    transform: rotate(-60deg);
+    animation: bgcir 150s infinite;
+}
+div.main > div#bgcirclewrap > div#bgcir5 {
+    bottom: -5%;
+    right: 24%;
+    transform: rotate(-60deg);
+    animation: bgcir 150s infinite;
+    opacity: 0.5;
+}
+
+@keyframes bgcir {
+    from {
+        transform: rotate(360deg);
+    }
+    to {
+        transform: rotate(-360deg);
+    }
+}
+@keyframes bgcir2 {
+    from {
+        transform: rotate(-360deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 /* main wrap section */
 div.main > section {}
 div.main > section > div#horizonline {
