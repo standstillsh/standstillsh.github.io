@@ -8,7 +8,7 @@ $(document).ready(function () {
 
     $('#topCircle').css({
       'margin-left' : '0',
-      'margin-top' : '-110px'
+      'margin-top' : '-107px'
     });
 
     $('#bottomline').css({
@@ -24,7 +24,7 @@ $(document).ready(function () {
       {
         $('#topCircle').css({
           'margin-left' : '10%',
-          'margin-top' : '0px'
+          'margin-top' : '5px'
         });
         $('#bottomline').css({
           'margin-left' : '10%',

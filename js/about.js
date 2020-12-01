@@ -7,9 +7,17 @@ console.log("Script Load");
             $cirrot = $('#cir_rot'),
             rot = -58,
             prevX = null,
-            IsGo = true;
+            IsGo = true,
+            $resume = $('#resume');
 
-        $('#resume').on('click', function(e){
+        // $resume.mouseenter(function() {
+        //     console.log("over");
+        //     $resume.animate({
+        //         'color' : '#ffffff',
+        //     }, 300);
+        // });
+
+        $resume.on('click', function(e){
             window.open('https://drive.google.com/u/0/uc?id=1IfNcwqsD7pA-BFRCVhPqImownFxcVnD1&export=download')
             // window.open('https://drive.google.com/file/d/1IfNcwqsD7pA-BFRCVhPqImownFxcVnD1/view?usp=sharing')
         })
@@ -60,11 +68,10 @@ console.log("Script Load");
             //     }
             // }
             
-
             $cirrot.css({
                 'transform' : 'rotate(' + rot + 'deg)',
             });
-            console.log(rot);
+            //console.log(rot);
 
             prevX = e.pageX;
             
