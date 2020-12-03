@@ -579,17 +579,17 @@ div.about > section > article#intro > div#eng {
 }
 
 /* 버튼 */
-div.about > section > article#intro > button#resume {
+div.about > section > article#intro > button#resume, button#pdf {
     border: none; background-color: #fff;
     font-family: 'Montserrat', sans-serif;
     font-weight: 900; font-style: italic;
     font-size: 28px;
     color: #ff7b00;
-    margin: 40px 0 36px 0;
+    margin: 40px 20px 36px 0;
     padding-left: 10px;
     padding-right: 10px;
     cursor: pointer;
-    transition: all 400ms ease-in-out;
+    transition: all 150ms ease-in;
 }
 div.about > section > article#intro > button#resume::after {
     border-bottom: 1px solid #ff7b00;
@@ -607,11 +607,13 @@ div.about > section > article#intro > span#slash {
     margin-left: 771px;
     transform: rotate(-55deg);   
 }
-div.about > section > article#intro > button#resume:hover {
-    color: #fff;
-    background-color: #ff7b00;
+div.about > section > article#intro > button#resume:hover, button#pdf:hover {
+    color: transparent;
+    -webkit-text-stroke: 1px #ff7b00;
+    /* -webkit-text-stroke: 1px #000; */
+    /* background-color: #ff7b00; */
 }
-div.about > section > article#intro > button#resume:focus {
+div.about > section > article#intro > button#resume:focus, button#pdf:focus {
     border: none; outline: none;
 }
 
@@ -967,6 +969,10 @@ div.workCategories > div#worksimages > img {
     width: 40vw;
     animation: pic 1500ms 1000ms ease-in-out forwards;
     opacity: 0;
+}
+
+#workvid {
+    width: 40vw; height: 44vh;
 }
 
 /* 스크롤 원 바 */

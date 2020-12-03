@@ -1,16 +1,37 @@
 // workUnity
 $(document).ready(function() {
     $("body").on('mousewheel',function(e){
-        console.log("scroll");
+        // console.log("scroll");
         console.log(scrollY);
         // i += 1;
         // $image.attr("src",_imagelinks[i]);
-        
-        // 스크롤Y가 3000보다 커지면 실행
-        if(scrollY >= 3000)
-        {
-            console.log("scroll 2000");
 
+        // 스크롤Y가 7400보다 크면 실행
+        if(scrollY >= 7400)
+        {
+            // 프로젝트 이름 변경
+            $("#projectname1").html('Nightmare');
+
+            // 프로젝트 서브 이름 변경
+            $("#projectname2").html('Nightmare Kinect Project');
+
+            // 프로젝트 개요 변경
+            $("#date").html('2020, 10');
+            $("#role").html('Solo Project');
+            $("#used").html('Unity / C# / Kinect');
+
+            // 프로젝트 설명 변경
+            $("#aboutproject").html('<span class="kor">처음으로 모션 센서 Kinect를 사용한 프로젝트 입니다.<br /> 플레이어의 꿈 속에서 단잠을 방해하는 방해물을 제거한다는 컨셉으로 진행했습니다.<br /> 플레이어의 몸 전체 동작을 이용해 진행되며, 플레이어가 센서 앞에 서서 손을 뻗을때 펀치로<br />인식합니다. 플레이어는 제한시간 동안 플레이어를 향해 다가오는 몬스터를 처치해야합니다.</span>');
+
+            // 버튼
+            $("#workbutton").css('visibility', 'visible');
+            $("#workbutton").html('<a href="https://drive.google.com/file/d/1myvwm4ne1Q-f_eNP1sJcbHXwZWwC3-9d/view?usp=sharing" target="_blank">SEE PROJECT</a>');
+    
+        }
+        
+        // 스크롤Y가 3000보다 크고 7400보다 작을때 실행
+        if(scrollY >= 3000 && scrollY < 7399)
+        {
             // 프로젝트 이름 변경
             $("#projectname1").html('Reincarnation');
 

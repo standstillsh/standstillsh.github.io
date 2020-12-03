@@ -22,11 +22,8 @@ $(document).ready(function() {
         // i += 1;
         // $image.attr("src",_imagelinks[i]);
         
-        // 스크롤Y가 2000보다 커지면 실행
-        if(scrollY >= 2000)
+        if(scrollY >= 2500)
         {
-            console.log("scroll 2000");
-
             // 프로젝트 이름 변경
             $("#projectname1").html('3D<span class="kor"> 오브젝트 모델링</span>');
 
@@ -39,13 +36,13 @@ $(document).ready(function() {
             $("#used").html('3Ds Max / Photoshop');
 
             // 프로젝트 설명 변경
-            $("#aboutproject").html('<span class="kor">평소 좋아하던 오브젝트를 직접 모델링 해보았습니다. <br /> 더 나아가 </span>');
+            $("#aboutproject").html('<span class="kor">평소 좋아하던 오브젝트를 직접 모델링 해보았습니다. </span>');
 
             // 버튼
             $("#workbutton").css('visibility', 'hidden');
         }
         // 원상태로 돌리기
-        else if (scrollY <= 1999)
+        else if (scrollY <= 2499)
         {
             // 프로젝트 이름 변경
             $("#projectname1").html('<span class="kor">초코송이</span> 3D <span class="kor">애니메이션</span>');
