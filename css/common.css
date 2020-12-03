@@ -665,7 +665,7 @@ div.about > section > article#pic > div#cir_rot {
 
 }
 
-div.about > section > article#pic > div#cir_rot > div#circle{
+div.about > section > article#pic > div#cir_rot > div#circle {
     width: 220px; height: 220px;
     border-radius: 50%;
     position: absolute;

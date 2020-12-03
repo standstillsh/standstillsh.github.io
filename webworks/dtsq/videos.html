@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Videos | Welcome to DTSQ</title>
+    <link rel="stylesheet" href="./css/style.css"/> 
+    <link rel="stylesheet" href="./css/reset.css"/> 
+</head>
+<body>
+    <div class="wrap videos">
+        <header>
+            <h1>
+                <a href="./main.html"><img src="./img/logo/logo1.png" alt="로고" width="90"></a>
+            </h1>
+            <h1>
+                <a href="./main.html"><img src="./img/logo/logo-hover.png" alt="로고호버" width="90"></a>
+            </h1>
+            <nav role="navigation">
+                <div id="menuToggle">
+                  <input type="checkbox" />
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <ul id="menu">
+                    <a href="./members.html"><li>MEMBERS</li></a>
+                    <a href="./discography.html"><li>DISCOGRAPHY</li></a>
+                    <a href="./videos.html"><li>VIDEOS</li></a>
+                    <a href="./lookatdtsq.html"><li>LOOK AT DTSQ</li></a>
+                  </ul>
+                </div>
+              </nav>
+        </header>
+        <section id="videowrap">
+            <div id="videodarker"></div>
+            <h1>2015 DTSQ COMPILATION</h1>
+            <iframe src="https://www.youtube.com/embed/TLdesKXMX5s?controls=0&vq=hd1080&autoplay=1&rel=0&loop=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+            <ul id="videothumbs">
+                <li class="selected"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <div id="videodarker2"></div>
+        </section>
+    </div>
+<script type="text/javascript" src="./gsap/gsap.min.js"></script>
+<script type="text/javascript" src="./js/script_videos.js"></script>
+</body>
+</html>
