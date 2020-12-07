@@ -23,7 +23,7 @@ body::-webkit-scrollbar {
 
 /* 배경 그라데이션 */
 body.gradient {
-	background: linear-gradient(90deg, #f2cd33, #ff7b00, #ff5000, #ff7b00);
+    background: linear-gradient(90deg, #f2cd33, #ff7b00, #ff5000, #ff7b00);
 	background-size: 400% 400%;
 	animation: gradient 10s ease infinite;
 }
@@ -971,34 +971,27 @@ div.workCategories > div#worksimages > img {
     opacity: 0;
 }
 
-#workvid {
+.workvid {
     width: 40vw; height: 44vh;
 }
 
-/* 스크롤 원 바 */
-div.workCategories > section#informWrap > div.bar {
-    display: inline-block;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-    height: 1px;
-    position: fixed;
-    bottom: 80px;
+/* gothis */
+div#gothiswrap {
+    width: 700px;
+    font-size: 20px;
+    margin: 0 auto;
 }
-div.workCategories > section#informWrap > div#bar1 {
-    width: 400px;
-    left: 40px;
+div#gothiswrap > a.gothis {
+
 }
-div.workCategories > section#informWrap > div#bar2 {
-    width: 200px;
-    left: 470px;
-}
-div.workCategories > section#informWrap >  div#barcircle {
-    display: block;
-    border-radius: 100px;
-    width: 22px;
-    height: 22px;
-    border: 1px solid rgba(0, 0, 0, 0.5);
-    position: fixed;
-    bottom: 69px;
-    left: 40px;
+div#gothiswrap > a.gothis:nth-child(2)
+{
+    margin: 0 15px 0 15px;
 }
 
+section#informWrap a {
+    transition: color ease-in-out 200ms;
+}
+section#informWrap a:hover {
+    color: #fff;
+}

@@ -73,5 +73,12 @@ $(document).ready(function() {
             $("#workbutton").html('<a href="https://youtu.be/IzZKLtZj3RU" target="_blank">WATCH VIDEO</a>');
         }
     });
-});
 
+    $('.gothis').click(function () {
+        $('html, body').animate({
+          scrollTop: $($.attr(this, 'href')).offset().top
+        }, 500);
+        return false;
+    });
+    
+});
