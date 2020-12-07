@@ -70,7 +70,7 @@ $(document).ready(function() {
 
             // 버튼
             $("#workbutton").css('visibility', 'visible');
-            $("#workbutton").html('<a href="https://youtu.be/IzZKLtZj3RU" target="_blank">WATCH VIDEO</a>');
+            $("#workbutton").html('<a href="http://dmdpro.cafe24.com/degreeshow/2020/website/tarottheeye/" target="_blank">GO WEBSITE</a>');
         }
     });
 

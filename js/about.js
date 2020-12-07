@@ -8,7 +8,8 @@ console.log("Script Load");
             rot = -58,
             prevX = null,
             IsGo = true,
-            $resume = $('#resume');
+            $resume = $('#resume'),
+            $pdf = $('#pdf');
 
         // $resume.mouseenter(function() {
         //     console.log("over");
@@ -20,7 +21,11 @@ console.log("Script Load");
         $resume.on('click', function(e){
             window.open('https://drive.google.com/file/d/1qpvAPsN2Vk2XBODfIq6Gom25k1FrY1RW/view?usp=sharing')
             // window.open('https://drive.google.com/file/d/1IfNcwqsD7pA-BFRCVhPqImownFxcVnD1/view?usp=sharing')
-        })
+        });
+
+        $pdf.on('click', function(e){
+            window.open('https://drive.google.com/file/d/1mf9XOssLo5tIYAXECIJNtrIS-NR8pESb/view');
+        });
 
         $(document).mousemove(function(e){
             // $('#circle').html(e.pageX +', '+ e.pageY);
