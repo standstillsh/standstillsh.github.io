@@ -1020,9 +1020,10 @@ div#gothiswrap {
     width: 700px;
     font-size: 20px;
     margin: 0 auto;
+    position: relative;
+    bottom: 60px;
 }
 div#gothiswrap > a.gothis {
-
 }
 div#gothiswrap > a.gothis:nth-child(2)
 {
