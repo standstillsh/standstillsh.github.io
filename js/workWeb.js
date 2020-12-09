@@ -1,5 +1,6 @@
 // workUnity
 $(document).ready(function() {
+
     $("body").on('mousewheel',function(e){
         // console.log("scroll");
         console.log(scrollY);
@@ -56,6 +57,7 @@ $(document).ready(function() {
         }, 500);
         return false;
     });
+
     
 });
 

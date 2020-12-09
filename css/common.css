@@ -22,6 +22,9 @@ body::-webkit-scrollbar {
 /* font-family: 'Noto Sans KR', sans-serif; */
 
 /* 배경 그라데이션 */
+body {
+    cursor: none;
+}
 body.gradient {
     background: linear-gradient(90deg, #f2cd33, #ff7b00, #ff5000, #ff7b00);
 	background-size: 400% 400%;
@@ -40,14 +43,46 @@ body.gradient {
 	}
 }
 
+/* Mouse 마우스 */
+
+#mouse-dotC {
+    position: relative; width: 76px; height: 76px; margin: -50px 0px 0px -50px; pointer-events: none!important;
+}
+
+#mouse-dot {
+    position: absolute; top: calc(50% - 9px); left: calc(50% - 9px); width: 18px; height: 18px; border-radius: 50%; 
+    background-color: #ff7b00;
+    mix-blend-mode: difference;
+
+    z-index: 2;
+    /* border: 1px solid #000; */
+}
+
+#mouse-dot-active.linkHover {
+    opacity: 0.5;
+}
+
+#mouse-circle {
+    position: absolute; width: 50px; height: 50px; 
+    margin: -30px 0px 0px -30px; border: 1px solid #000; border-radius: 48%; pointer-events: none!important; 
+    z-index: 10;
+    
+}
+
+
 /* wrap */
 div.wrap {font-family: 'Montserrat', sans-serif;}
 
 /* header */
-div.wrap > header {}
+div.wrap > header {
+    top:0;
+    position: fixed;
+    z-index: 99;
+}
 div.wrap > header > h1 {
     margin-left: 14px; margin-top: 14px; float: left; z-index: 10;
     position: fixed;
+    
 }
 
 /* header > div.nav */
@@ -90,6 +125,7 @@ div.wrap > header > div.nav > span#nav3 {
 
 /* div#menu */
 div#menu {
+    top: 0;
     width: 100vw;
     height: 100vh;
     position: fixed;
@@ -817,6 +853,7 @@ div.workCategories > section {
 }
 div.workCategories > section#informWrap {
     position: fixed;
+    top:5px;
 }
 
 div.workCategories > section#informWrap > ul {
@@ -961,6 +998,9 @@ div.workCategories > div#worksimages {
     /* margin-top: 100px; */
     position: absolute;
     right: 5%;
+
+       
+
     
 }
 div.workCategories > div#worksimages > img {
