@@ -19,8 +19,7 @@ console.log("Script Load");
         // });
 
         $resume.on('click', function(e){
-            window.open('https://drive.google.com/file/d/1qpvAPsN2Vk2XBODfIq6Gom25k1FrY1RW/view?usp=sharing')
-            // window.open('https://drive.google.com/file/d/1IfNcwqsD7pA-BFRCVhPqImownFxcVnD1/view?usp=sharing')
+            window.open('https://drive.google.com/file/d/10NGSoUfm4nAuBf1dTReWq-Ty1tWxYH8X/view?usp=sharing')
         });
 
         $pdf.on('click', function(e){
