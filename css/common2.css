@@ -1,5 +1,5 @@
 /* 반응형 */
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
     div#menu {
         right: -100vw;
     }
