@@ -1,0 +1,51 @@
+/* 반응형 */
+@media (max-width: 768px) {
+    div#menu {
+        right: -100vw;
+    }
+    div#menu > ul {
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    div#menu > ul > li {
+       margin: auto;
+    }
+    div#menu > ul > li:nth-child(2)
+    {
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+    div#menu > ul > li:hover{
+        top: 0;
+    }
+    div#menu > ul > li > a > span {
+        display: none;
+    }
+
+    div#worksub {
+        top: 60%;
+        font-size: 22px;
+    }
+
+    div.main > section > div#topCircle {
+        /* transform: translateX(-10%); */
+    }
+
+
+    div.main > section > div#maintext{
+        left: 0;
+        text-align: center;
+    }
+
+    div.main > section > div#maintext > span#maintitle {
+        font-size: 90px;
+        line-height: 1.5;
+    }
+    div.main > section > div#maintext > span#mainsub {
+        font-size: 20px;
+    }
+}
