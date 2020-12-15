@@ -18,12 +18,14 @@ console.log("Script Load");
         //     }, 300);
         // });
 
+        // 이력서
         $resume.on('click', function(e){
             window.open('https://drive.google.com/file/d/10NGSoUfm4nAuBf1dTReWq-Ty1tWxYH8X/view?usp=sharing')
         });
 
+        // pdf
         $pdf.on('click', function(e){
-            window.open('https://drive.google.com/file/d/1mf9XOssLo5tIYAXECIJNtrIS-NR8pESb/view');
+            window.open('https://drive.google.com/file/d/1970uGDlx2xf28d2keFj_S6BaYbp_ng5W/view?usp=sharing');
         });
 
         $(document).mousemove(function(e){

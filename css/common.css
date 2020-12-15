@@ -422,7 +422,7 @@ div.main > section > div#maintext > span#maintitle > span:nth-child(4) {
 
 
 
-/* Mian topCircle */
+/* Main topCircle */
 div.main > section > div#topCircle {
     position: fixed;
     top: 50%;
@@ -1028,6 +1028,11 @@ div#gothiswrap > a.gothis {
 div#gothiswrap > a.gothis:nth-child(2)
 {
     margin: 0 15px 0 15px;
+}
+
+div#gothiswrap > a.gothis:nth-child(3)
+{
+    margin: 0 15px 0 0;
 }
 
 section#informWrap a {

@@ -48,4 +48,21 @@
     div.main > section > div#maintext > span#mainsub {
         font-size: 20px;
     }
+
+
+    /* about */
+
+    div.about > section {
+        width: 100vw;
+    }
+
+    div.about > section > article {
+        width: 100vw;
+    }
+
+    div.about > section > article#pic {
+        /* float: right;  */
+        animation: pic 1500ms 1000ms ease-in-out forwards;
+        opacity: 0;
+    }
 }

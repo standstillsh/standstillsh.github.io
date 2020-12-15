@@ -6,8 +6,29 @@ $(document).ready(function() {
         // i += 1;
         // $image.attr("src",_imagelinks[i]);
 
-        // 스크롤Y가 7400보다 크면 실행
-        if(scrollY >= 7400)
+        // 스크롤 Y가 10500보다 클 때 실행
+        if (scrollY >= 10500)
+        {
+            // 프로젝트 이름 변경
+            $("#projectname1").html('Make A Wish');
+
+            // 프로젝트 서브 이름 변경
+            $("#projectname2").html('Make A Wish Leap Motion Project');
+
+            // 프로젝트 개요 변경
+            $("#date").html('2020, 12');
+            $("#role").html('Solo Project');
+            $("#used").html('Unity / C# / Leap Motion');
+
+            // 프로젝트 설명 변경
+            $("#aboutproject").html('<span class="kor">Leap Motion 컨트롤러를 사용해 손동작으로 플레이 할 수 있는 프로젝트 입니다. <br /> 늦은 밤, 하늘에서 떨어진 별똥별을 주워 소원을 빈다는 컨셉으로 진행했습니다. 그에 맞게 전체적인 분위기를 조성했으며 단순히 디지털 상의 물체를 집는 것이 아닌 공간을 볼 수 있도록 이동이 가능하게 구현했습니다. 숲 속을 이동하며 떨어진 별똥별을 주워 목표 지점에 가져다 놓아 조건을 충족시키면 클리어 할 수 있는 간단한 게임입니다.</span>');
+
+            // 버튼
+            $("#workbutton").css('visibility', 'visible');
+            $("#workbutton").html('<a href="https://drive.google.com/file/d/1SZNw4iOtKMH_T04dmZaGJezm5mXEWECB/view?usp=sharing" target="_blank">SEE PROJECT</a>');
+        }
+        // 스크롤Y가 7400보다 크고 10499보다 작을때 실행
+        else if(scrollY >= 7400 && scrollY < 10499)
         {
             // 프로젝트 이름 변경
             $("#projectname1").html('Nightmare');
@@ -28,9 +49,8 @@ $(document).ready(function() {
             $("#workbutton").html('<a href="https://drive.google.com/file/d/1myvwm4ne1Q-f_eNP1sJcbHXwZWwC3-9d/view?usp=sharing" target="_blank">SEE PROJECT</a>');
     
         }
-        
         // 스크롤Y가 3000보다 크고 7400보다 작을때 실행
-        if(scrollY >= 3000 && scrollY < 7399)
+        else if(scrollY >= 3000 && scrollY < 7399)
         {
             // 프로젝트 이름 변경
             $("#projectname1").html('Reincarnation');
