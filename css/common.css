@@ -22,9 +22,10 @@ body::-webkit-scrollbar {
 /* font-family: 'Noto Sans KR', sans-serif; */
 
 /* 배경 그라데이션 */
-body {
+/* body {
     cursor: none;
-}
+} */
+
 body.gradient {
     background: linear-gradient(90deg, #f2cd33, #ff7b00, #ff5000, #ff7b00);
 	background-size: 400% 400%;
@@ -42,33 +43,6 @@ body.gradient {
 		background-position: 0% 50%;
 	}
 }
-
-/* Mouse 마우스 */
-
-#mouse-dotC {
-    position: relative; width: 76px; height: 76px; margin: -50px 0px 0px -50px; pointer-events: none!important;
-}
-
-#mouse-dot {
-    position: absolute; top: calc(50% - 9px); left: calc(50% - 9px); width: 18px; height: 18px; border-radius: 50%; 
-    background-color: #ff7b00;
-    mix-blend-mode: difference;
-
-    z-index: 2;
-    /* border: 1px solid #000; */
-}
-
-#mouse-dot-active.linkHover {
-    opacity: 0.5;
-}
-
-#mouse-circle {
-    position: absolute; width: 50px; height: 50px; 
-    margin: -30px 0px 0px -30px; border: 1px solid #000; border-radius: 48%; pointer-events: none!important; 
-    z-index: 10;
-    
-}
-
 
 /* wrap */
 div.wrap {font-family: 'Montserrat', sans-serif;}
@@ -121,7 +95,17 @@ div.wrap > header > div.nav > span#nav3 {
     transition: all ease-in-out 600ms;
     bottom:0;
 }
-
+div.wrap > header > div.nav:hover > span#nav1 {
+    transform: rotate(45deg);
+    top: 13px;
+}
+div.wrap > header > div.nav:hover > span#nav2 {
+    opacity: 0;
+}
+div.wrap > header > div.nav:hover > span#nav3 {
+    transform: rotate(-45deg);
+    bottom: 13px;
+}
 
 /* div#menu */
 div#menu {
@@ -130,7 +114,6 @@ div#menu {
     height: 100vh;
     position: fixed;
     right: -100vw;
-
     background: linear-gradient(90deg, #f2cd33, #ff7b00, #ff5000, #ff7b00);
 	background-size: 400% 400%;
     animation: gradient 10s ease infinite;
@@ -164,7 +147,6 @@ div#menu > ul > li > a > span {
     font-weight: 400;
     /* padding-left: 5px; */
     /* margin-bottom: 20px; */    
-
 }
 div#menu > div#horizonlineformenu {
     width: 100%;
@@ -236,8 +218,7 @@ div#worksub {
     justify-content: space-around;
     width: 70vw;
 }
-div#worksub > span{
-}
+div#worksub > span{}
 div#worksub > span > a{
     color: #000;
     transition: color 200ms ease-in-out;
@@ -421,18 +402,16 @@ div.main > section > div#maintext > span#maintitle > span:nth-child(4) {
 }
 
 
-
 /* Main topCircle */
 div.main > section > div#topCircle {
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    /* margin-top: -110px; */
-    margin-left: 10%;
+    margin-top: -118px;
     opacity: 0;
     animation: AppearTopCircle 500ms ease-in-out 1500ms forwards;
-    transition: left 100ms ease-out;
+    /* transition: left 100ms ease-out; */
 }
 
 @keyframes AppearTopCircle {
@@ -540,8 +519,7 @@ div.main > section > div#bottomline {
     position: fixed;
     left:50%; bottom: 50%;
     transform: translate(-50%, -50%);
-    margin-bottom: -435px;
-    margin-left: 10%;
+    margin-bottom: -288px;
     opacity: 0;
     animation: AppearTopCircle 500ms ease-in-out 2000ms forwards;
     transition: left 100ms ease-out;
@@ -615,7 +593,7 @@ div.about > section > article#intro > div#eng {
 }
 
 /* 버튼 */
-div.about > section > article#intro > button#resume, button#pdf {
+div.about > section > article#intro > button#resume {
     border: none; background-color: #fff;
     font-family: 'Montserrat', sans-serif;
     font-weight: 900; font-style: italic;
@@ -624,7 +602,7 @@ div.about > section > article#intro > button#resume, button#pdf {
     margin: 40px 20px 36px 0;
     padding-left: 10px;
     padding-right: 10px;
-    cursor: pointer;
+    /* cursor: pointer; */
     transition: all 150ms ease-in;
 }
 div.about > section > article#intro > button#resume::after {
@@ -643,13 +621,13 @@ div.about > section > article#intro > span#slash {
     margin-left: 771px;
     transform: rotate(-55deg);   
 }
-div.about > section > article#intro > button#resume:hover, button#pdf:hover {
+div.about > section > article#intro > button#resume:hover {
     color: transparent;
     -webkit-text-stroke: 1px #ff7b00;
     /* -webkit-text-stroke: 1px #000; */
     /* background-color: #ff7b00; */
 }
-div.about > section > article#intro > button#resume:focus, button#pdf:focus {
+div.about > section > article#intro > button#resume:focus {
     border: none; outline: none;
 }
 
@@ -748,6 +726,7 @@ div.contact {
     background: linear-gradient(90deg, #f2cd33, #ff7b00, #ff5000, #ff7b00);
 	background-size: 400% 400%;
     animation: gradient 10s ease infinite;
+    top: 0;
 }
     
 div.contact > section {
@@ -998,11 +977,8 @@ div.workCategories > div#worksimages {
     /* margin-top: 100px; */
     position: absolute;
     right: 5%;
-
-       
-
-    
 }
+
 div.workCategories > div#worksimages > img {
     border-radius: 0;
     /* margin: auto; */

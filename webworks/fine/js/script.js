@@ -178,203 +178,203 @@ var persona1ElBox = document.getElementById("persona1box");
 var persona2El = document.getElementById("persona2");
 var persona2ElBox = document.getElementById("persona2box");
 
-// 화살표
-var goclick1El = document.getElementById("click1");
-var goclick2El = document.getElementById("click2");
+// // 화살표
+// var goclick1El = document.getElementById("click1");
+// var goclick2El = document.getElementById("click2");
 
-// 페르소나1
+// // 페르소나1
 
 
-persona1El.addEventListener("mouseover", onMouseOverpersona1);
-persona1El.addEventListener("mouseout", onMouseOutpersona1);
+// persona1El.addEventListener("mouseover", onMouseOverpersona1);
+// persona1El.addEventListener("mouseout", onMouseOutpersona1);
 
-function onMouseOverpersona1(e) {
-    // console.log("마우스 오버");
-    e.stopPropagation()
+// function onMouseOverpersona1(e) {
+//     // console.log("마우스 오버");
+//     e.stopPropagation()
 
-    persona1ElBox.classList.add("Overpersona1");
+//     persona1ElBox.classList.add("Overpersona1");
 
-    persona1ElBox.classList.remove("Outpersona1");    
+//     persona1ElBox.classList.remove("Outpersona1");    
 
-    persona2El.classList.add("Overpersona1_2");
-    persona2ElBox.classList.add("Overpersona1_2");
+//     persona2El.classList.add("Overpersona1_2");
+//     persona2ElBox.classList.add("Overpersona1_2");
 
-    persona2El.classList.remove("Outpersona1_2");
-    persona2ElBox.classList.remove("Outpersona1_2");
+//     persona2El.classList.remove("Outpersona1_2");
+//     persona2ElBox.classList.remove("Outpersona1_2");
 
-    persona1El.classList.remove("Outpersona2_2");
-    persona1ElBox.classList.remove("Outpersona2_2");
-    persona2ElBox.classList.remove("Outpersona2");
+//     persona1El.classList.remove("Outpersona2_2");
+//     persona1ElBox.classList.remove("Outpersona2_2");
+//     persona2ElBox.classList.remove("Outpersona2");
 
-    // 화살표
-    goclick1El.classList.add("goclick1");
-    goclick1El.classList.remove("goclick1_2");
+//     // 화살표
+//     goclick1El.classList.add("goclick1");
+//     goclick1El.classList.remove("goclick1_2");
 
     
     
-}
+// }
 
-function onMouseOutpersona1(e) {
-    // console.log("마우스 아웃");
-    e.stopPropagation()
+// function onMouseOutpersona1(e) {
+//     // console.log("마우스 아웃");
+//     e.stopPropagation()
 
-    persona1ElBox.classList.add("Outpersona1");
-    persona1ElBox.classList.remove("Overpersona1");
+//     persona1ElBox.classList.add("Outpersona1");
+//     persona1ElBox.classList.remove("Overpersona1");
 
-    persona2El.classList.remove("Overpersona1_2");
-    persona2ElBox.classList.remove("Overpersona1_2");
+//     persona2El.classList.remove("Overpersona1_2");
+//     persona2ElBox.classList.remove("Overpersona1_2");
 
-    persona2El.classList.add("Outpersona1_2");
-    persona2ElBox.classList.add("Outpersona1_2");
+//     persona2El.classList.add("Outpersona1_2");
+//     persona2ElBox.classList.add("Outpersona1_2");
 
-    // 화살표
-    goclick1El.classList.remove("goclick1");
-    // 화살표
-    goclick1El.classList.add("goclick1_2");
+//     // 화살표
+//     goclick1El.classList.remove("goclick1");
+//     // 화살표
+//     goclick1El.classList.add("goclick1_2");
 
 
-        // 왼쪽 박스 확장 삭제
-        persona1ElBox.classList.remove("Uppersona1");
+//         // 왼쪽 박스 확장 삭제
+//         persona1ElBox.classList.remove("Uppersona1");
 
-        // 오른쪽 박스 밀림 삭제
-        persona2El.classList.remove("Uppersona1_2");
-        persona2ElBox.classList.remove("Uppersona1_2");
+//         // 오른쪽 박스 밀림 삭제
+//         persona2El.classList.remove("Uppersona1_2");
+//         persona2ElBox.classList.remove("Uppersona1_2");
 
-        gsap.to(perul1, {
-            "opacity" : 0,
-            "duration" : 0.1,
-            "ease" : "sine.out"
-         });
-}
+//         gsap.to(perul1, {
+//             "opacity" : 0,
+//             "duration" : 0.1,
+//             "ease" : "sine.out"
+//          });
+// }
 
-// 페르소나2
+// // 페르소나2
 
-persona2El.addEventListener("mouseover", onMouseOverpersona2);
-persona2El.addEventListener("mouseout", onMouseOutpersona2);
+// persona2El.addEventListener("mouseover", onMouseOverpersona2);
+// persona2El.addEventListener("mouseout", onMouseOutpersona2);
 
-function onMouseOverpersona2(e) {
-    // console.log("마우스 오버2");
-    e.stopPropagation()
-    // 초기화 제거
-    persona1ElBox.classList.remove("Outpersona1");
-    persona2El.classList.remove("Outpersona1_2");
-    persona2ElBox.classList.remove("Outpersona1_2");
+// function onMouseOverpersona2(e) {
+//     // console.log("마우스 오버2");
+//     e.stopPropagation()
+//     // 초기화 제거
+//     persona1ElBox.classList.remove("Outpersona1");
+//     persona2El.classList.remove("Outpersona1_2");
+//     persona2ElBox.classList.remove("Outpersona1_2");
 
-    persona1El.classList.remove("Outpersona2_2");
-    persona1ElBox.classList.remove("Outpersona2_2");
+//     persona1El.classList.remove("Outpersona2_2");
+//     persona1ElBox.classList.remove("Outpersona2_2");
 
-    persona2ElBox.classList.remove("Outpersona2");
+//     persona2ElBox.classList.remove("Outpersona2");
 
-    // 추가
-    persona2ElBox.classList.add("Overpersona2");
+//     // 추가
+//     persona2ElBox.classList.add("Overpersona2");
 
-    // 왼쪽 박스 밀림
-    persona1El.classList.add("Overpersona2_2");
-    persona1ElBox.classList.add("Overpersona2_2");
+//     // 왼쪽 박스 밀림
+//     persona1El.classList.add("Overpersona2_2");
+//     persona1ElBox.classList.add("Overpersona2_2");
 
-    // 화살표
-    goclick2El.classList.add("goclick2");
-    goclick2El.classList.remove("goclick2_2");
+//     // 화살표
+//     goclick2El.classList.add("goclick2");
+//     goclick2El.classList.remove("goclick2_2");
 
-    gsap.to(perul2, {
-        "display" : "none",
-        "opacity" : 0,
-        "duration" : 0.1,
-        "ease" : "sine.out"
-     });
+//     gsap.to(perul2, {
+//         "display" : "none",
+//         "opacity" : 0,
+//         "duration" : 0.1,
+//         "ease" : "sine.out"
+//      });
 
-}
+// }
 
-function onMouseOutpersona2(e) {
-    e.stopPropagation()
-    // 초기화 제거
-    persona2ElBox.classList.remove("Overpersona2");
-    persona1El.classList.remove("Overpersona2_2");
-    persona1ElBox.classList.remove("Overpersona2_2");
+// function onMouseOutpersona2(e) {
+//     e.stopPropagation()
+//     // 초기화 제거
+//     persona2ElBox.classList.remove("Overpersona2");
+//     persona1El.classList.remove("Overpersona2_2");
+//     persona1ElBox.classList.remove("Overpersona2_2");
 
-    // 추가
-    persona2ElBox.classList.add("Outpersona2");
+//     // 추가
+//     persona2ElBox.classList.add("Outpersona2");
 
-    // 왼쪽 박스 복귀
-    persona1El.classList.add("Outpersona2_2");
-    persona1ElBox.classList.add("Outpersona2_2");
+//     // 왼쪽 박스 복귀
+//     persona1El.classList.add("Outpersona2_2");
+//     persona1ElBox.classList.add("Outpersona2_2");
 
-    // 화살표
-    goclick2El.classList.remove("goclick2");
-    // 화살표
-    goclick2El.classList.add("goclick2_2");
+//     // 화살표
+//     goclick2El.classList.remove("goclick2");
+//     // 화살표
+//     goclick2El.classList.add("goclick2_2");
 
-            // 오른쪽 박스 확장 삭제
-            persona2ElBox.classList.remove("Uppersona2");
+//             // 오른쪽 박스 확장 삭제
+//             persona2ElBox.classList.remove("Uppersona2");
 
-            // 왼쪽 박스 밀림 삭제
-            persona1El.classList.remove("Uppersona2_2");
-            persona1ElBox.classList.remove("Uppersona2_2");
+//             // 왼쪽 박스 밀림 삭제
+//             persona1El.classList.remove("Uppersona2_2");
+//             persona1ElBox.classList.remove("Uppersona2_2");
     
-}
+// }
 
-// 페르소나 박스 확장
+// // 페르소나 박스 확장
 
-goclick1El.addEventListener("mouseup", onMouseUppersona1)
+// goclick1El.addEventListener("mouseup", onMouseUppersona1)
 
-function onMouseUppersona1(e) {
-    console.log("클릭");
-    // 왼쪽 박스 확장
-    e.stopPropagation()
-    persona1ElBox.classList.add("Uppersona1");
+// function onMouseUppersona1(e) {
+//     console.log("클릭");
+//     // 왼쪽 박스 확장
+//     e.stopPropagation()
+//     persona1ElBox.classList.add("Uppersona1");
 
-    // 오른쪽 박스 밀림
-    persona2El.classList.add("Uppersona1_2");
-    persona2ElBox.classList.add("Uppersona1_2");
-}
+//     // 오른쪽 박스 밀림
+//     persona2El.classList.add("Uppersona1_2");
+//     persona2ElBox.classList.add("Uppersona1_2");
+// }
 
-// 페르소나2 박스 확장
-goclick2El.addEventListener("mouseup", onMouseUppersona2)
+// // 페르소나2 박스 확장
+// goclick2El.addEventListener("mouseup", onMouseUppersona2)
 
-function onMouseUppersona2(e) {
-    console.log("클릭");
-    e.stopPropagation()
-    // 왼쪽 박스 확장
-    persona2ElBox.classList.add("Uppersona2");
+// function onMouseUppersona2(e) {
+//     console.log("클릭");
+//     e.stopPropagation()
+//     // 왼쪽 박스 확장
+//     persona2ElBox.classList.add("Uppersona2");
 
-    // 오른쪽 박스 밀림
-    persona1El.classList.add("Uppersona2_2");
-    persona1ElBox.classList.add("Uppersona2_2");
-}
+//     // 오른쪽 박스 밀림
+//     persona1El.classList.add("Uppersona2_2");
+//     persona1ElBox.classList.add("Uppersona2_2");
+// }
 
-// 페르소나 텍스트
+// // 페르소나 텍스트
 
-var btn1 = document.querySelector("#click1"),
-    btn2 = document.querySelector("#click2"),
-    perul1 = document.querySelector("#perul1"),
-    perul2 = document.querySelector("#perul2");
-
-
-btn1.addEventListener("mouseup", btn1click);
-btn2.addEventListener("mouseup", btn2click);
+// var btn1 = document.querySelector("#click1"),
+//     btn2 = document.querySelector("#click2"),
+//     perul1 = document.querySelector("#perul1"),
+//     perul2 = document.querySelector("#perul2");
 
 
-function btn1click(e) {
-    e.preventDefault();
-    e.stopPropagation()
-        gsap.to(perul1, {
-            "opacity" : 1,
-            "duration" : 1,
-            "ease" : "sine.out"
-         });
-}
+// btn1.addEventListener("mouseup", btn1click);
+// btn2.addEventListener("mouseup", btn2click);
 
-function btn2click(e) {
-    // console.log("click");
-    e.preventDefault();
-    e.stopPropagation()
-        gsap.to(perul2, {
-            "display" : "block",
-            "opacity" : 1,
-            "duration" : 1,
-            "ease" : "sine.out"
-         });
-}
+
+// function btn1click(e) {
+//     e.preventDefault();
+//     e.stopPropagation()
+//         gsap.to(perul1, {
+//             "opacity" : 1,
+//             "duration" : 1,
+//             "ease" : "sine.out"
+//          });
+// }
+
+// function btn2click(e) {
+//     // console.log("click");
+//     e.preventDefault();
+//     e.stopPropagation()
+//         gsap.to(perul2, {
+//             "display" : "block",
+//             "opacity" : 1,
+//             "duration" : 1,
+//             "ease" : "sine.out"
+//          });
+// }
 
 // 가로스크롤 버튼
 // var horbtnnext = document.querySelector("#next"),

@@ -8,9 +8,7 @@ console.log("Script Load");
             rot = -58,
             prevX = null,
             IsGo = true,
-            $resume = $('#resume'),
-            $pdf = $('#pdf');
-
+            $resume = $('#resume')
         // $resume.mouseenter(function() {
         //     console.log("over");
         //     $resume.animate({
@@ -21,11 +19,6 @@ console.log("Script Load");
         // 이력서
         $resume.on('click', function(e){
             window.open('https://drive.google.com/file/d/10NGSoUfm4nAuBf1dTReWq-Ty1tWxYH8X/view?usp=sharing')
-        });
-
-        // pdf
-        $pdf.on('click', function(e){
-            window.open('https://drive.google.com/file/d/1970uGDlx2xf28d2keFj_S6BaYbp_ng5W/view?usp=sharing');
         });
 
         $(document).mousemove(function(e){

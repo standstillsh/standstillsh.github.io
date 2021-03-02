@@ -12,7 +12,7 @@ html, body {
     line-height: 1;
 }
 body {
-    font-size: 16px;
+    font-size: 18px;
     font-family: 'Noto Sans KR', sans-serif;
     overflow-x: hidden;
 }
@@ -304,6 +304,7 @@ section#content3_2 > div.inner > h3 {
     color: #006cff;
     font-weight: 700;
     font-size: 40px;
+    
 }
 
 section#content3_2 > div.persona {
@@ -315,7 +316,7 @@ section#content3_2 > div.persona > div.wrap {
     position: absolute;
     width: 600px;
     height: 100%;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 section#content3_2 > div.persona > div.wrap > div.text {
@@ -323,13 +324,13 @@ section#content3_2 > div.persona > div.wrap > div.text {
     position: relative;
     font-size: 25px;
     font-weight: 600;
+    transition: all 200ms ease-in;
 }
 section#content3_2 > div.persona > div.wrap > img.perchar {
     position: absolute;
     bottom: 0;
-}
-section#content3_2 > div.persona > div.wrap > img.perchar:hover {
-    /* height: 500px; */
+    transition: all 200ms ease-in;
+
 }
 section#content3_2 > div#persona1 {
     position: absolute;
@@ -383,29 +384,35 @@ section#content3_2 > div#persona2 > div.wrap > div.text {
     color: #fff;
     left: 180px;
 }
-section#content3_2 button {
-    background-color: inherit;
-    border: 0;
-    cursor: pointer;
-}
-section#content3_2 > div#persona1 > div.wrap > button#click1 {
+section#content3_2 > div.persona > div.wrap > ul {
     position: absolute;
-    top: 150px;
+    opacity: 0;
+    width: 100%;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 2;
+    transition: opacity 200ms ease-in;
+}
+section#content3_2 > div#persona1 > div.wrap > ul {
     color: #006cff;
-    right: 0;
-    font-size: 140px;
+}
+section#content3_2 > div#persona2 > div.wrap > ul {
+    color: #fff;
+}
+section#content3_2 > div.persona > div.wrap:hover > ul {
+    opacity: 1;
+    /* z-index: 10; */
+}
+section#content3_2 > div.persona > div.wrap:hover > div.text, section#content3_2 > div.persona > div.wrap:hover > img.perchar {
     opacity: 0;
 }
 
-section#content3_2 > div#persona2 > div.wrap > button#click2 {
-    position: absolute;
-    top: 150px;
-    color: #fff;
-    font-size: 140px;
-    opacity: 0;
-}
+
 /* persona text */
-section#content3_2 > div#persona1 ul#perul1 {
+/* section#content3_2 > div#persona1 ul#perul1 {
     position: absolute;
     top: 75px;
     right: -660px;
@@ -425,14 +432,14 @@ section#content3_2 > div#persona2 ul#perul2 {
     opacity: 0;
     display: none;
     /* display: block; */
-    top: 145px;
+    /* top: 145px;
     left: -660px;
     line-height: 50px;
     font-size: 21px;
-}
-section#content3_2 > div#persona2 ul#perul2 > li {
+} */
+/* section#content3_2 > div#persona2 ul#perul2 > li {
     list-style-type: square;
-}
+} */
 
 /* section#content4 */
 section#content4 {
@@ -615,8 +622,11 @@ section#content7 ol > li:focus{
     height: 800px;
     width: 1200px;
     padding-bottom: 100px;
-  }
-  #horizontal-scroll-wrapper {
+}
+#horizontal-scroll-wrapper::-webkit-scrollbar {
+    display: none;
+}
+#horizontal-scroll-wrapper {
     display: inline-block;
     display: flex;
     flex-direction: column;
@@ -630,32 +640,30 @@ section#content7 ol > li:focus{
     padding: 0;
     /* perspective: 1px; */
     /* padding-bottom: 10rem; */
-  }
-  .external .img-wrapper {
+}
+.external .img-wrapper {
     height: 800px;
     width: 1600px;
     transform: rotate(90deg);
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-
-  .external p {
-    margin: 0;
-  }
-  .external .first {
+}
+.external p {
+    margin: 0;  
+}
+.external .first {
     margin-left: 60px;
     margin-top: -200px;
-  }
-  .external .second {
+}
+.external .second {
     margin-left: 100px;
     margin-top: -200px;
     margin-bottom: 200px;
-  }
-
-  .external .container {
+}
+.external .container {
     position: relative;
-  }
+}
 
 /* section#content8 */
 
