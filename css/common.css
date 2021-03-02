@@ -22,9 +22,6 @@ body::-webkit-scrollbar {
 /* font-family: 'Noto Sans KR', sans-serif; */
 
 /* 배경 그라데이션 */
-/* body {
-    cursor: none;
-} */
 
 body.gradient {
     background: linear-gradient(90deg, #f2cd33, #ff7b00, #ff5000, #ff7b00);
