@@ -21,10 +21,8 @@ console.log("Script Load");
             $menutrans = $('#menutrans'),
             $menutrans2 = $('#menutrans2'),
             
-            $menuwork3d = $('#gowork3d'),
-            $menuworkmi = $('#goworkmi'),
-            $menuworkunity = $('#goworkunity'),
             $menuworkweb = $('#goworkweb'),
+            $menuworketc = $('#goworketc'),
 
             isMenu = false,
             isWork = false;
@@ -219,10 +217,6 @@ console.log("Script Load");
             //     'bottom' : '0'
             // });
 
-            // setTimeout(function() { 
-            //     location.href = './work.html'
-            // }, 2000);
-
             if(!isWork)
             {
                 $worksub.animate({
@@ -236,6 +230,90 @@ console.log("Script Load");
                 }, 1000);
                 isWork = false;
             }
+        });
+
+        // menuworkweb
+        $menuworkweb.on('click', function(e)
+        {
+            e.preventDefault();
+
+            $menutrans.css({
+                'top' : '0',
+                'right' : '-100vw'
+            });
+            $menutrans2.css({
+                'top' : '0',
+                'left' : '-100vw'
+            });
+
+            $menutrans.animate({
+                'right' : '0',
+            }, 900);
+
+            setTimeout(function() { 
+                $menutrans2.animate({
+                    // 'right' : '50vw',
+                    'left' : '-50vw',
+                }, 500);
+            }, 1000);
+
+            $nav1.css({
+                'transform' : 'rotate(0deg)',
+                'top' : '0'
+            });
+            $nav2.css({
+                'opacity' : '1',
+            });
+            $nav3.css({
+                'transform' : 'rotate(0deg)',
+                'bottom' : '0'
+            });
+
+            setTimeout(function() { 
+                location.href = './work_website.html'
+            }, 2000);
+        });
+
+        // menuworketc
+        $menuworketc.on('click', function(e)
+        {
+            e.preventDefault();
+
+            $menutrans.css({
+                'top' : '0',
+                'right' : '-100vw'
+            });
+            $menutrans2.css({
+                'top' : '0',
+                'left' : '-100vw'
+            });
+
+            $menutrans.animate({
+                'right' : '0',
+            }, 900);
+
+            setTimeout(function() { 
+                $menutrans2.animate({
+                    // 'right' : '50vw',
+                    'left' : '-50vw',
+                }, 500);
+            }, 1000);
+
+            $nav1.css({
+                'transform' : 'rotate(0deg)',
+                'top' : '0'
+            });
+            $nav2.css({
+                'opacity' : '1',
+            });
+            $nav3.css({
+                'transform' : 'rotate(0deg)',
+                'bottom' : '0'
+            });
+
+            setTimeout(function() { 
+                location.href = './work_etc.html'
+            }, 2000);
         });
 
     });
