@@ -60,206 +60,6 @@ console.log("Script Load");
 
         });
 
-        $menuworkmi.on('click', function(e){
-            e.preventDefault();
-
-            $menutrans.css({
-                'top' : '0',
-                'right' : '-100vw'
-            });
-            $menutrans2.css({
-                'top' : '0',
-                'left' : '-100vw'
-            });
-
-            $menutrans.animate({
-                'right' : '0',
-            }, 900);
-
-            setTimeout(function() { 
-                $menutrans2.animate({
-                    // 'right' : '50vw',
-                    'left' : '-50vw',
-                }, 500);
-            }, 1000);
-
-            $nav1.css({
-                'transform' : 'rotate(0deg)',
-                'top' : '0'
-            });
-            $nav2.css({
-                'opacity' : '1',
-            });
-            $nav3.css({
-                'transform' : 'rotate(0deg)',
-                'bottom' : '0'
-            });
-
-            setTimeout(function() { 
-                location.href = './work_movingimage.html'
-            }, 2000);
-        });
-
-        $menuworkunity.on('click', function(e){
-            e.preventDefault();
-
-            $menutrans.css({
-                'top' : '0',
-                'right' : '-100vw'
-            });
-            $menutrans2.css({
-                'top' : '0',
-                'left' : '-100vw'
-            });
-
-            $menutrans.animate({
-                'right' : '0',
-            }, 900);
-
-            setTimeout(function() { 
-                $menutrans2.animate({
-                    // 'right' : '50vw',
-                    'left' : '-50vw',
-                }, 500);
-            }, 1000);
-
-            $nav1.css({
-                'transform' : 'rotate(0deg)',
-                'top' : '0'
-            });
-            $nav2.css({
-                'opacity' : '1',
-            });
-            $nav3.css({
-                'transform' : 'rotate(0deg)',
-                'bottom' : '0'
-            });
-
-            setTimeout(function() { 
-                location.href = './work_unity.html'
-            }, 2000);
-        });
-
-        $menuworkweb.on('click', function(e){
-            e.preventDefault();
-
-            $menutrans.css({
-                'top' : '0',
-                'right' : '-100vw'
-            });
-            $menutrans2.css({
-                'top' : '0',
-                'left' : '-100vw'
-            });
-
-            $menutrans.animate({
-                'right' : '0',
-            }, 900);
-
-            setTimeout(function() { 
-                $menutrans2.animate({
-                    // 'right' : '50vw',
-                    'left' : '-50vw',
-                }, 500);
-            }, 1000);
-
-            $nav1.css({
-                'transform' : 'rotate(0deg)',
-                'top' : '0'
-            });
-            $nav2.css({
-                'opacity' : '1',
-            });
-            $nav3.css({
-                'transform' : 'rotate(0deg)',
-                'bottom' : '0'
-            });
-
-            setTimeout(function() { 
-                location.href = './work_web.html'
-            }, 2000);
-        });
-            
-        $menuwork3d.on('click', function(e){
-            e.preventDefault();
-
-            $menutrans.css({
-                'top' : '0',
-                'right' : '-100vw'
-            });
-            $menutrans2.css({
-                'top' : '0',
-                'left' : '-100vw'
-            });
-
-            $menutrans.animate({
-                'right' : '0',
-            }, 900);
-
-            setTimeout(function() { 
-                $menutrans2.animate({
-                    // 'right' : '50vw',
-                    'left' : '-50vw',
-                }, 500);
-            }, 1000);
-
-            $nav1.css({
-                'transform' : 'rotate(0deg)',
-                'top' : '0'
-            });
-            $nav2.css({
-                'opacity' : '1',
-            });
-            $nav3.css({
-                'transform' : 'rotate(0deg)',
-                'bottom' : '0'
-            });
-
-            setTimeout(function() { 
-                location.href = './work_3d.html'
-            }, 2000);
-        });
-
-        $menuwork3d.on('click', function(e){
-            e.preventDefault();
-
-            $menutrans.css({
-                'top' : '0',
-                'right' : '-100vw'
-            });
-            $menutrans2.css({
-                'top' : '0',
-                'left' : '-100vw'
-            });
-
-            $menutrans.animate({
-                'right' : '0',
-            }, 900);
-
-            setTimeout(function() { 
-                $menutrans2.animate({
-                    // 'right' : '50vw',
-                    'left' : '-50vw',
-                }, 500);
-            }, 1000);
-
-            $nav1.css({
-                'transform' : 'rotate(0deg)',
-                'top' : '0'
-            });
-            $nav2.css({
-                'opacity' : '1',
-            });
-            $nav3.css({
-                'transform' : 'rotate(0deg)',
-                'bottom' : '0'
-            });
-
-            setTimeout(function() { 
-                location.href = './work_3d.html'
-            }, 2000);
-        });
-
 
         $about.on('click', function(e){
             // e.preventDefault();
@@ -386,7 +186,42 @@ console.log("Script Load");
         $work.on('click', function(e)
         {
             e.preventDefault();
-            console.log("menu 클릭");
+
+            // $menutrans.css({
+            //     'top' : '0',
+            //     'right' : '-100vw'
+            // });
+            // $menutrans2.css({
+            //     'top' : '0',
+            //     'left' : '-100vw'
+            // });
+
+            // $menutrans.animate({
+            //     'right' : '0',
+            // }, 900);
+
+            // setTimeout(function() { 
+            //     $menutrans2.animate({
+            //         // 'right' : '50vw',
+            //         'left' : '-50vw',
+            //     }, 500);
+            // }, 1000);
+
+            // $nav1.css({
+            //     'transform' : 'rotate(0deg)',
+            //     'top' : '0'
+            // });
+            // $nav2.css({
+            //     'opacity' : '1',
+            // });
+            // $nav3.css({
+            //     'transform' : 'rotate(0deg)',
+            //     'bottom' : '0'
+            // });
+
+            // setTimeout(function() { 
+            //     location.href = './work.html'
+            // }, 2000);
 
             if(!isWork)
             {

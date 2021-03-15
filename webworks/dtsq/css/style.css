@@ -126,6 +126,7 @@ div.main > footer > div.etc > div.sns > ul {}
 div.main > footer > div.etc > div.sns > ul > li {font-size: 25px;float: left;}
 div.main > footer > div.etc > div.sns > ul > li:nth-child(2) {padding: 0 15px 0 15px;}
 div.main > footer > div.etc > div.sns > ul > li > a {
+    color: #fff;
     opacity: 1;
     transition: opacity 0.3s ease;
     -webkit-transition: opacity 0.3s ease;
@@ -418,7 +419,7 @@ display: none;
 
 #slider {
 /* height: 55vw; */
-top: 20%;
+top: 22%;
 position: relative;
 perspective: 100vw;
 transform-style: preserve-3d;
