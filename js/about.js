@@ -18,7 +18,7 @@ console.log("Script Load");
 
         // 이력서
         $resume.on('click', function(e){
-            window.open('https://drive.google.com/file/d/10NGSoUfm4nAuBf1dTReWq-Ty1tWxYH8X/view?usp=sharing')
+            window.open('https://drive.google.com/file/d/165QVAdjbgtJ7S7Dp4LzxThmMfC3eUso7/view?usp=sharing')
         });
 
         $(document).mousemove(function(e){
