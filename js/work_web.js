@@ -1,4 +1,4 @@
-var menu = [ "PENHALIGON'S WEBSITE", 'THE EYE WEBSIE', 'DTSQ WEBSITE','FINE WEBSITE',];
+var menu = [ "PENHALIGON'S WEBSITE", 'THE EYE WEBSITE', 'DTSQ WEBSITE','FINE WEBSITE',];
 var mySwiper = new Swiper('.swiper-container', {
     direction: 'vertical',
     pagination: {
